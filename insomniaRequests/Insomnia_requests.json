@@ -1,0 +1,226 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-01-23T14:18:24.478Z",
+	"__export_source": "insomnia.desktop.app:v5.12.4",
+	"resources": [
+		{
+			"_id": "wrk_c92695239b9f4332bdb20e89daa47a16",
+			"created": 1516703148080,
+			"description": "",
+			"modified": 1516703148080,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_a8abd0763c2345899ef4590dff61f487",
+			"color": null,
+			"created": 1516703148149,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1516703170855,
+			"name": "New Environment",
+			"parentId": "wrk_c92695239b9f4332bdb20e89daa47a16",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_157516995cc84ec198562fe1f6a79361",
+			"cookies": [],
+			"created": 1516703148223,
+			"modified": 1516703148223,
+			"name": "Default Jar",
+			"parentId": "wrk_c92695239b9f4332bdb20e89daa47a16",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_8df53063a55e462da7176beb518f0d33",
+			"authentication": {},
+			"body": {},
+			"created": 1516703502489,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8c5dbcff9ba747089a42179df3e86b32",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTUxNzU3NTE0N30.prP2CPGTdb8pkt1B9zUL9UBg_T_twfXx7tsKgHwenBb4uFAmmgBtE0NziUjamT6zl-FncC7rtkdlSER6sNoUpQ"
+				}
+			],
+			"metaSortKey": -1516703502495,
+			"method": "GET",
+			"modified": 1516711168703,
+			"name": "GetTasks",
+			"parameters": [],
+			"parentId": "wrk_c92695239b9f4332bdb20e89daa47a16",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8081/tasks",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2eebdf875aba4f1ea7d992db4d9beb7c",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"description\": \"Buy some milk(shake)\"\n}"
+			},
+			"created": 1516703665587,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b92918b96e914b9bb0db97857f90784c",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_70b25c7824e249aea5f094eecf41ce58",
+					"name": "Authorization",
+					"value": "\tBearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTUxNzU3NTQwOX0.LXDjhPvMaEJQSLkzMLMEQoCLYzMlwI6nsinyz3J-GGCBiZitIQV4Xvzb57i84gWa82RqcioQqG6DTlqhqkQ3Cg"
+				}
+			],
+			"metaSortKey": -1516703594234.25,
+			"method": "POST",
+			"modified": 1516711418389,
+			"name": "AddTask",
+			"parameters": [],
+			"parentId": "wrk_c92695239b9f4332bdb20e89daa47a16",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8081/tasks",
+			"_type": "request"
+		},
+		{
+			"_id": "req_74a2a30c0c80485eb12e31f8a309350d",
+			"authentication": {},
+			"body": {},
+			"created": 1516704537584,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8189fa4eb5af47538aca6b1715464f62",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTUxNzU3NTE0N30.prP2CPGTdb8pkt1B9zUL9UBg_T_twfXx7tsKgHwenBb4uFAmmgBtE0NziUjamT6zl-FncC7rtkdlSER6sNoUpQ"
+				}
+			],
+			"metaSortKey": -1516703502445,
+			"method": "DELETE",
+			"modified": 1516711185279,
+			"name": "DeleteTasks",
+			"parameters": [],
+			"parentId": "wrk_c92695239b9f4332bdb20e89daa47a16",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8081/tasks/1",
+			"_type": "request"
+		},
+		{
+			"_id": "req_fbcc70baf48d4b5c94efdda7f5167a7f",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"description\": \"Buy some milk(shake)\"\n}"
+			},
+			"created": 1516704592818,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_a0bf147063ad4cda8844317dd3ab244c",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_eabed6e6fd17492a949c2d4222985570",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTUxNzU3NTE0N30.prP2CPGTdb8pkt1B9zUL9UBg_T_twfXx7tsKgHwenBb4uFAmmgBtE0NziUjamT6zl-FncC7rtkdlSER6sNoUpQ"
+				}
+			],
+			"metaSortKey": -1516703584041,
+			"method": "PUT",
+			"modified": 1516711488638,
+			"name": "UpdateTask",
+			"parameters": [],
+			"parentId": "wrk_c92695239b9f4332bdb20e89daa47a16",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8081/tasks/2",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ca0aae73eade41258752d2c290696513",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"username\": \"admin\",\n    \"password\": \"password\"\n}"
+			},
+			"created": 1516710957613,
+			"description": "Register new User",
+			"headers": [
+				{
+					"id": "pair_372410859a0e4442856320bbfc316701",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"metaSortKey": -1516703624814,
+			"method": "POST",
+			"modified": 1516711109628,
+			"name": "SignIn",
+			"parameters": [],
+			"parentId": "wrk_c92695239b9f4332bdb20e89daa47a16",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8081/users/sign-up",
+			"_type": "request"
+		},
+		{
+			"_id": "req_bea363533beb428c8b6a2e911c0c70b6",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"username\": \"admin\",\n    \"password\": \"password\"\n}"
+			},
+			"created": 1516711123021,
+			"description": "Login user",
+			"headers": [
+				{
+					"id": "pair_372410859a0e4442856320bbfc316701",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"metaSortKey": -1516703604427.5,
+			"method": "POST",
+			"modified": 1516711141953,
+			"name": "Login",
+			"parameters": [],
+			"parentId": "wrk_c92695239b9f4332bdb20e89daa47a16",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8081/login",
+			"_type": "request"
+		},
+		{
+			"_id": "env_134d2ff595634689a5fd2a804eb4af64",
+			"color": "#d7001a",
+			"created": 1516703159416,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1516703715521,
+			"name": "JWT Tests",
+			"parentId": "env_a8abd0763c2345899ef4590dff61f487",
+			"_type": "environment"
+		}
+	]
+}
