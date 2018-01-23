@@ -10,6 +10,10 @@ buildscript {
 	}
 }
 
+plugins {
+    id 'net.ltgt.apt' version '0.10'
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
@@ -22,9 +26,13 @@ repositories {
 }
 
 dependencies {
+    compileOnly 'org.projectlombok:lombok:1.16.20'
+    apt "org.projectlombok:lombok:1.16.20"
 	compile('org.springframework.boot:spring-boot-starter')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-security")
+    compile("io.jsonwebtoken:jjwt:0.7.0")
 	compile("org.springframework.boot:spring-boot-starter-data-jpa")
 	compile("org.hsqldb:hsqldb")
 }
