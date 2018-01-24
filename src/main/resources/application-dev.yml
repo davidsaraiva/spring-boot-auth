@@ -6,3 +6,6 @@ spring:
     minIdle: 2
     initialSize: 5
     removeAbandoned: true
+  jpa:
+    hibernate:
+      ddl-auto: update
