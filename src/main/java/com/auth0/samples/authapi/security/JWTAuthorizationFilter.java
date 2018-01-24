@@ -21,6 +21,7 @@ import static com.auth0.samples.authapi.security.SecurityConstants.*;
  */
 public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 
+
 	public JWTAuthorizationFilter(AuthenticationManager authManager) {
 		super(authManager);
 	}
