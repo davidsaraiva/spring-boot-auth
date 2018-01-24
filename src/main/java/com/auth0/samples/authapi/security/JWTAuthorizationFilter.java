@@ -14,16 +14,19 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 
 import io.jsonwebtoken.Jwts;
 
-import static com.auth0.samples.authapi.security.SecurityConstants.*;
+import static com.auth0.samples.authapi.security.SecurityConfig.AUTHORIZATION_HEADER;
+import static com.auth0.samples.authapi.security.SecurityConfig.TOKEN_PREFIX;
 
 /**
  * Filter responsible for user authorization
  */
 public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 
+	private final SecurityConfig securityConfig;
 
-	public JWTAuthorizationFilter(AuthenticationManager authManager) {
+	public JWTAuthorizationFilter(AuthenticationManager authManager, SecurityConfig securityConfig) {
 		super(authManager);
+		this.securityConfig = securityConfig;
 	}
 
 	@Override
@@ -45,7 +48,9 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 	private UsernamePasswordAuthenticationToken getAuthentication(String token) {
 		if (token != null) {
 			// parse the token.
-			String user = Jwts.parser().setSigningKey(SECRET.getBytes()).parseClaimsJws(token.replace(TOKEN_PREFIX, ""))
+			String user = Jwts.parser()
+					.setSigningKey(securityConfig.getSecret().getBytes())
+					.parseClaimsJws(token.replace(TOKEN_PREFIX, ""))
 					.getBody().getSubject();
 
 			if (user != null) {
