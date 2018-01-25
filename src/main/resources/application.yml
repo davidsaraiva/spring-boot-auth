@@ -5,3 +5,4 @@ security:
   token:
     expirationTime: 1_800_000 # 30 min
     secret: "strongSecretRight"
+
